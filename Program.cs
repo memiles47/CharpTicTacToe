@@ -17,6 +17,8 @@ namespace TicTacToe
             {
                 Console.WriteLine(name);
             }
+            Console.Write("Press any key to continue");
+            Console.ReadKey();
         }
     }
 }
