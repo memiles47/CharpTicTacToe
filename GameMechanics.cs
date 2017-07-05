@@ -12,11 +12,7 @@ namespace TicTacToe
             {"low_L", " "}, {"low_M", " "}, {"low_R", " "}
         };
 
-        public Dictionary<int, string> playerNames = new Dictionary<int, string>
-        {
-            {1, ""},
-            {2, ""}
-        };
+        public Dictionary<int, string> playerNames = new Dictionary<int, string>{{1, ""}, {2, ""}};
 
         public void EnterPlayers(Dictionary<int, string> names)
         {
