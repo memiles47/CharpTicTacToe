@@ -1,24 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace TicTacToe
 {
-    class Program
+    public class Program
     {
         static void Main()
         {
-            // Set up new board
-            var theBoard = new Dictionary<string, string>
+            var gameMechanics = new GameMechanics();
+            var gameBoard = gameMechanics.NewBoard;
+            var players = gameMechanics.playerNames;
+
+            gameMechanics.EnterPlayers(players);
+            gameMechanics.PrintBoard(gameBoard);
+
+            foreach (var name in players)
             {
-                {"top_L", " " },
-                {"top_M", " " },
-                {"top_R", " " },
-                {"mid_L", " " },
-                {"mid_M", " " },
-                {"low_L", " " },
-                {"low_M", " " },
-                {"low_R", " " }
-            };
+                Console.WriteLine(name);
+            }
         }
     }
 }
