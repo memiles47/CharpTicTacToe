@@ -14,9 +14,8 @@ namespace TicTacToe
             gameMechanics.PrintBoard(gameBoard);
 
             foreach (var name in players)
-            {
                 Console.WriteLine(name);
-            }
+
             Console.Write("Press any key to continue");
             Console.ReadKey();
         }
