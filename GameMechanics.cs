@@ -18,6 +18,7 @@ namespace TicTacToe
         {
             for (var i = 1; i < 3; i++)
             {
+                //Ternary will go here
                 Console.Write($"Enter name for player {i}: ");
                 names[i] = Console.ReadLine();
             }
