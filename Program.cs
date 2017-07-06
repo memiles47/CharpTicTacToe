@@ -8,7 +8,7 @@ namespace TicTacToe
         {
             var gameMechanics = new GameMechanics();
             var gameBoard = gameMechanics.NewBoard;
-            var players = gameMechanics.playerNames;
+            var players = gameMechanics.PlayerNames;
 
             gameMechanics.EnterPlayers(players);
             gameMechanics.PrintBoard(gameBoard);
