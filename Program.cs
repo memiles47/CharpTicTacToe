@@ -6,12 +6,12 @@ namespace TicTacToe
     {
         static void Main()
         {
-            var gameMechanics = new GameMechanics();
-            var gameBoard = gameMechanics.NewBoard;
-            var players = gameMechanics.PlayerNames;
+            var gameSetup = new GameSetup();
+            var gameBoard = gameSetup.NewBoard;
+            var players = gameSetup.PlayerNames;
 
-            gameMechanics.EnterPlayers(players);
-            gameMechanics.PrintBoard(gameBoard);
+            gameSetup.EnterPlayers(players);
+            gameSetup.PrintBoard(gameBoard);
 
             foreach (var name in players)
                 Console.WriteLine(name);
@@ -19,5 +19,11 @@ namespace TicTacToe
             Console.Write("Press any key to continue");
             Console.ReadKey();
         }
+    }
+
+    public class gameMechanics
+    {
+        //Win/Lose/Draw
+        //Playermove
     }
 }

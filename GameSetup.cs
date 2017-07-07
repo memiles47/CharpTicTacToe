@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TicTacToe
 {
-    public class GameMechanics
+    public class GameSetup
     {
         public readonly Dictionary<string, string> NewBoard = new Dictionary<string, string>
         {
@@ -18,6 +18,7 @@ namespace TicTacToe
         {
             for (var i = 1; i < 3; i++)
             {
+                //Add code for capitolization
                 Console.Write($"Enter name for player {i}: ");
                 names[i] = Console.ReadLine();
                 if (names[i] == "")
