@@ -9,6 +9,7 @@ namespace TicTacToe
             var gameSetup = new GameSetup();
             var gameBoard = gameSetup.NewBoard;
             var players = gameSetup.PlayerNames;
+            var gameMechanics = new GameMechanics();
 
             gameSetup.EnterPlayers(players);
             gameSetup.PrintBoard(gameBoard);
@@ -19,11 +20,5 @@ namespace TicTacToe
             Console.Write("Press any key to continue");
             Console.ReadKey();
         }
-    }
-
-    public class gameMechanics
-    {
-        //Win/Lose/Draw
-        //Playermove
     }
 }
