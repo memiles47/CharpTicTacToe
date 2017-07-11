@@ -5,7 +5,7 @@
         //Win/Lose/Draw
         public string WinLoseDraw(string player)
         {
-            
+            return "You Win";
         }
     }
 }

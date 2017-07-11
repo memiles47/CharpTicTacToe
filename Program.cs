@@ -17,6 +17,8 @@ namespace TicTacToe
             foreach (var name in players)
                 Console.WriteLine(name);
 
+            Console.WriteLine(gameMechanics.WinLoseDraw("Mike"));
+
             Console.Write("Press any key to continue");
             Console.ReadKey();
         }
