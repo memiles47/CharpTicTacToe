@@ -3,7 +3,7 @@
     public class GameMechanics
     {
         //Win/Lose/Draw
-        public void WinLoseDraw(int player)
+        public string WinLoseDraw(int player)
         {
             
         }
