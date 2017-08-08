@@ -18,7 +18,6 @@ namespace TicTacToe
         {
             for (var i = 1; i < 3; i++)
             {
-                //Add code for capitalization
                 Console.Write($"Enter name for player {i}: ");
                 names[i] = Console.ReadLine();
                 if (names[i] == "")
